@@ -40,8 +40,8 @@ nav {
   height: 100vh;
   width: auto;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-    url('../img/bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+    url('../img/dunderry.jpg');
   background-blend-mode: multiply;
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -51,13 +51,13 @@ nav {
 }
 
 .logo {
-  display: flex;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20rem;
-  height: 20rem;
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  vertical-align: top;
+  width: 6rem;
+  height: 6rem;
   z-index: 0;
 }
 
@@ -137,8 +137,8 @@ nav {
 
   .logo {
 
-    width: 15rem;
-    height: 15rem;
+    width: 4rem;
+    height: 4rem;
 
   }
 }
