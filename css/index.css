@@ -23,11 +23,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
-
 }
 
 .nav-links li a {
-
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -36,18 +34,16 @@ nav {
 /* landing */
 
 .landing {
-
   height: 100vh;
   width: auto;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../img/dunderry.jpg');
   background-blend-mode: multiply;
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-
 }
 
 .logo {
@@ -61,10 +57,57 @@ nav {
   z-index: 0;
 }
 
-@media screen and (max-width:768px) {
+.battle {
+  position: relative;
+  top: 50%;
+  width: 16em;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-family: consolas;
+  font-size: 400%;
+  letter-spacing: 5px;
+  margin: 0 auto;
+}
 
+.anim-typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 16em;
+  }
+}
+
+.town {
+  color: red;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  tp {
+    border-right-color: transparent;
+  }
+}
+
+/* About Section */
+.about-page {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
   .line {
-
     width: 30px;
     height: 3px;
     background: white;
@@ -76,7 +119,6 @@ nav {
   }
 
   .hamburger {
-
     position: absolute;
     cursor: pointer;
     right: 5%;
@@ -96,7 +138,6 @@ nav {
     transition: all 1s ease-out;
     pointer-events: none;
     z-index: 1;
-
   }
 
   .nav-links.open {
@@ -126,9 +167,7 @@ nav {
   }
 
   .nav-links li:nth-child(3) {
-
     transition: all 0.5s ease 0.6s;
-
   }
 
   li.fade {
@@ -136,9 +175,12 @@ nav {
   }
 
   .logo {
-
     width: 4rem;
     height: 4rem;
+  }
 
+  .battle {
+    font-size: 150%;
+    letter-spacing: 3px;
   }
 }
