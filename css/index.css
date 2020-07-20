@@ -77,6 +77,7 @@ nav {
   animation: typewriter 4s steps(40) 1s 1 normal both,
     blinkTextCursor 500ms steps(40) infinite normal;
 }
+
 @keyframes typewriter {
   from {
     width: 0;
@@ -104,6 +105,30 @@ nav {
 /* About Section */
 .about-page {
   flex-direction: column;
+}
+
+/* Gallery */
+
+.pictures {
+  text-align: center;
+  color: forestgreen;
+  margin: 30px 0 50px;
+}
+
+.picture-gallery {
+  margin: 10px 50px;
+}
+
+.picture-gallery img {
+  width: 230px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.picture-gallery img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
@@ -180,7 +205,7 @@ nav {
   }
 
   .battle {
-    font-size: 150%;
+    font-size: 120%;
     letter-spacing: 3px;
   }
 }
