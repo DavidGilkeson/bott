@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -104,15 +106,48 @@ nav {
 
 /* About Section */
 .about-page {
-  flex-direction: column;
+  height: 100vh;
+  width: auto;
+  text-align: center;
+  background-color: #6a767d;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 150px;
+}
+
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
 }
 
 /* Gallery */
 
-.pictures {
+h1 {
   text-align: center;
-  color: forestgreen;
-  margin: 30px 0 50px;
+  font-family: 'Acme', sans-serif;
+  color: #f81313;
+  padding: 20px;
+  letter-spacing: 5px;
+}
+.gallery {
+  height: 100vh;
+  width: auto;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/croke.jpg');
+  background-blend-mode: multiply;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .picture-gallery {
@@ -129,6 +164,25 @@ nav {
 .picture-gallery img:hover {
   filter: grayscale(0);
   transform: scale(1.1);
+}
+
+/* Winners */
+
+.roll-of-honor {
+  height: 100vh;
+  width: auto;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/clubhouse12.jpg');
+  background-blend-mode: multiply;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.winners {
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
